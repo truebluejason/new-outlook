@@ -48,19 +48,19 @@ func DispatchIntents(request alexa.Request) alexa.Response {
 	/*
 	switch request.Body.Intent.Name {
 	case "AnxietyIntent":
-		response, err = handler.HandleAnxiety(request)
+		response, err = handlers.HandleAnxiety(request)
 	case "BitternessIntent":
-		response, err = handler.HandleBitterness(request)
+		response, err = handlers.HandleBitterness(request)
 	case "CravingIntent":
-		response, err = handler.HandleCraving(request)
+		response, err = handlers.HandleCraving(request)
 	case "DoubtIntent":
-		response, err = handler.HandleDoubt(request)
+		response, err = handlers.HandleDoubt(request)
 	case "GeneralIntent":
-		response, err = handler.HandleGeneral(request)
+		response, err = handlers.HandleGeneral(request)
 	case "LazinessIntent":
-		response, err = handler.HandleLaziness(request)
+		response, err = handlers.HandleLaziness(request)
 	case alexa.HelpIntent:
-		response = handler.HandleHelp()
+		response = handlers.HandleHelp()
 	}
 
 	if err != nil {
